@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    div{
+        text-align: center;
+        color: black;
+    }
+</style>
+
+<head>
+    <script>
+        function car2button(){
+        document.getElementById("car2").style.color = "blue";
+        }
+    </script>
+</head>
+
+<div>
+    <p id="car1">This car is red!</p>
+    <p>
+       <button type="button" onclick="car1button()">Click me!</button>
+    </p>
+    <script>
+        function car1button(){
+            document.getElementById("car1").style.color = "red";
+        }
+    </script>
+</div>
+
+<div>
+    <p id="car2">This car is blue!</p>
+    <p>
+        <button type="button" onclick="car2button()">Click me!</button>
+    </p>
+</div>
+
+<div>
+    <p id="car3">This car is large and purple!</p>
+    <p>
+        <button type="button" onclick="extFunction()">Click me!</button></p>
+    <script src="~\Scripts\extFunction.js"></script>
+</div>
